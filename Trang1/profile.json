@@ -1,0 +1,26 @@
+
+{
+  "profile": [
+    {
+      "name":"Nguyễn Quang Sang",
+      "University":"Student at University of Science Ho Chi Minh City",
+      "Country" :"Vietnam   ",
+      "University1":"Software Engineering",
+      "Current":"Thành Phố Hồ Chí Minh",
+      "Previous":"Nha Trang, Khánh Hòa",
+      "des1":"Coding .NET over 1 year",
+      "des2":"Currently Student at Univerisity of Science, the school of VietNam's university",
+      "des3":"Experience on coding C++",
+      "des4":"Specialites: strategy, marketing, product developement",
+      "exp1":"Student",
+      "exp2":"University of Science",
+      "exp3":"September 2013",
+      "exp4":"-Present(3 years 5 months)",
+      "proj":"C++ and C# Progamming: Paint and Caro online",
+      "sk":"Business Analyst",
+      "sk1":"Marketing Online",
+      "HighSchool":"Le Quy Don HighSchool"
+    }
+  ]
+
+}
