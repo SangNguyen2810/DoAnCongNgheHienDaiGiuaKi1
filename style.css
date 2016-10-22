@@ -1,0 +1,28 @@
+
+.body
+{
+	width: 100%;
+	height:auto;
+	background-image: url("paris.jpg");
+}
+
+table, th{
+    border: 3px solid #0D47A1;
+    background-color:#2196F3 ;
+
+}
+th,td{
+    font-size: 20px;
+    padding: 15px;
+}
+.intro{
+    font-weight: bold;
+    font-size: 50px;
+    color: #3D2117;
+
+
+}
+.table{
+    margin-top: 2%;
+    background-color:#2196F3;
+}
