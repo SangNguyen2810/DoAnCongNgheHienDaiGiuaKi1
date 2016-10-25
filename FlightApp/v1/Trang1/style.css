@@ -1,0 +1,220 @@
+
+.body
+{
+	width: 100%;
+	height:auto;
+	background-image: URL("paris.jpg");
+}
+.all{  /*CSS cho tat ca background*/
+margin-top: 120px;
+}
+.logo{  /*CSS cho dong Cheapflights va dong Smart search made simple*/
+    text-align: center;
+}
+.firstlogo { /*Dong Cheapflights*/
+    color: #FF7F50;
+    font-size: 70px;
+    font-family: Corbel;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.secondlogo{ /*CSS cho dong Smart search made simple*/
+    color: #FF7F50;
+    font-size: 25px;
+    font-family: Corbel;
+
+}
+
+
+
+.selection{ /*CSS cho toan bo phan selection bao gom (noi di va noi den) va (ngay di va ngay den)*/
+    margin-top: 3%;
+}
+.from
+{
+    background-color: white;
+    display: inline-block;
+
+    border: 2px solid #FF7F50;
+
+
+}
+.information{
+    background-color:#ffd600 ;
+}
+.inputfrom{
+    border:0;
+    outline-width: 0px;
+    width: 80%;
+    height: 45px;
+    margin-left: 5%;
+}
+
+
+.labeltextbox{
+    margin: 0px;
+}
+
+.labeltextbox1{
+    margin: 0px;
+}
+.inputto{
+    border:0;
+    outline-width: 0px;
+    width: 80%;
+    height: 45px;
+    margin-left: 20px;
+}
+.to
+{
+    background-color: white;
+    display: inline-block;
+    border: 2px solid #FF7F50;
+   
+}
+
+.FromTo{
+   
+}
+
+.FromTo > div{
+    display: inline-block;
+    width: 40%;
+    
+    vertical-align: top;
+}
+
+.destination>div{
+    width: 70%;
+    margin: 0 auto;
+    margin-left:30%;
+}
+
+#listFrom  {
+    margin: 0 auto;
+}
+.Detail{
+    margin-left: 12%;
+    margin-top: 5%;
+
+}
+.Date{
+    margin-top:5%;
+    margin-right:0px;
+
+    display:inline;
+}
+.DateFrom{
+    background-color: white;
+    display: inline-block;
+    height: 45px;
+    border: 2px solid #FF7F50;
+    
+
+}
+.inputdatefrom{
+    border:0;
+    outline-width: 0px;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+}
+.labeltextboxdDaatefrom{
+    margin: 0px;
+}
+.imagedate{
+    height: 40px;
+    width: 40px;
+}
+.DateTo{
+    background-color: white;
+    display: inline-block;
+    height: 45px;
+    margin-left: 25px;
+    border: 2px solid #FF7F50;
+    
+}
+.inputdateto{
+    border:0;
+    outline-width: 0px;
+    width: 140px;
+    height: 40px;
+    margin-left: 15px;
+}
+.TypeTicket{
+
+    background-color: white;
+    display: inline-block;
+    margin-left: 0px;
+    border: 2px solid #FF7F50;
+ 
+
+
+}
+.labelnumber{
+    margin:0px;
+}
+.inputnumber{
+    border:0;
+    outline-width: 0px;
+    width: 200px;
+    height: 45px;
+    margin-left: 20px;
+
+}
+.TypeTicket1{
+
+
+    display: inline-block;
+    margin-left: 20px;
+
+
+}
+.labeltextbox2{
+    margin: 0px;
+}
+.labeltextbox3{
+    margin: 0px;
+}
+.ButtonFlight{
+    margin-top:4%;
+}
+.TypeDate{
+
+    display: inline ;
+    height: 45px;
+    margin-left: 7px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: bold;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-weight: bold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-weight: bold;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-weight: bold;
+}
+.button {
+    padding: 10px 110px;
+    background-color:#FF7F50;
+    border: none;
+    color: white;
+    size: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 490px;
+}
+
+#TypeDate1{
+    background-color: #FF7F50;
+}
