@@ -23,6 +23,27 @@ class DbOperation
         return $assignments;
     }
 
+       public function showFlights($id,$id1,$id2){
+        $select = "SELECT * FROM flight WHERE NoiDi=? AND NoiDen=? AND Ngay=?";
+       if($stmt = $this->con->prepare($select)){
+        $stmt->bind_param("sss", $id,$id1,$id2);
+        $stmt->execute();
+        $assignments = $stmt->get_result();
+        $stmt->close();
+        return $assignments;
+    };
+}
+     public function getFlightsSBF($id){
+        $select = "SELECT * FROM flight WHERE NoiDi=?";
+        if($stmt = $this->con->prepare($select)){
+        $stmt->bind_param("s", $id);
+        $stmt->execute();
+        $assignments = $stmt->get_result();
+        $stmt->close();
+        return $assignments;
+    };
+    }
+
     //Method to get student details
  
 

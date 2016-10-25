@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script language="javascript" src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script language="javascript" src="script.js"></script>
+    <script src="jsDatePick.full.1.3.js"></script>
+    <script src="jquery.1.4.2.js"></script>
+    <script src="jsDatePick.jquery.full.1.3.js"></script>
+    <script src="jsDatePick.jquery.min.1.3.js"></script>
+    <script src="jsDatePick.min.1.3.js"></script>
+    <link rel="stylesheet" href="jsDatePick_ltr.css">
+    <link rel="stylesheet" href="jsDatePick_ltr.min.css">
+    <link rel="stylesheet" href="jsDatePick_rtl.css">
+    <link rel="stylesheet" href="jsDatePick_rtl.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+</head>
+<body class="body">
+    <div class="all" >
+        <div class="intro">
+            Kiểm tra kết quả đặt chỗ
+        </div>
+        <div class="nhapthongtin">
+
+            <div class="nhapmachuyenbay">
+                <label class="labelten">Mã:</label>
+                <input type="text" class="inputma" id="ma" placeholder="Mã chuyến bay">
+            </div>
+            <div class="nhapnoidi">
+                <label class="labelten">Nơi đi:</label>
+                <input type="text" class="inputnoidi" placeholder="Nhập nơi đi">
+            </div>
+            <div class="nhapnoiden">
+                <label class="labelten">Nơi đến:</label>
+                <input type="text" class="inputnoiden" placeholder="Nhập nơi đến">
+            </div>
+
+            <div class="nhapngay">
+                <label class="labelten">Ngày:</label>
+                <input type="text" class="inputngay" placeholder="Ngày khởi hành">
+                <script>
+                    $(document).ready(function(){
+                        var date_input=$('input[name="date"]'); //our date input has the name "date"
+                        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                        var options={
+                            format: 'mm/dd/yyyy',
+                            container: container,
+                            todayHighlight: true,
+                            autoclose: true,
+                        };
+                        date_input.datepicker(options);
+                    })
+                </script>
+            </div>
+            <div class="nhapgio">
+                <label class="labelten">Giờ:</label>
+                <input type="text" class="inputgio" placeholder="Chọn giờ(HH:MM)">
+            </div>
+            <div class="nhaphang">
+                <label class="labelten">Hạng:</label>
+                <select class="inputhang">
+                    <option value="volvo">Y</option>
+                    <option value="saab">C</option>
+
+                </select>
+            </div>
+            <div class="nhapmucgia">
+                <label class="labelten">Mức giá:</label>
+                <select class="inputmucgia">
+                    <option value="volvo">E</option>
+                    <option value="saab">F</option>
+                    <option value="saab">G</option>
+                </select>
+            </div>
+            <div class="nhapgiaban">
+                <label class="labelten">Số hộ chiếu:</label>
+                <input type="text" class="inputgiaban" placeholder="Nhập hộ chiếu">
+            </div>
+        </div>
+        <div class="ButtonFlight">
+            <button class="button">Kiểm tra</button>
+        </div>
+    </div>
+
+</body>
+</html>

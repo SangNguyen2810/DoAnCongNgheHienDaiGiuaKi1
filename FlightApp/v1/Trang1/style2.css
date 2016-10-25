@@ -1,0 +1,48 @@
+
+.body
+{
+	width: 100%;
+	height:auto;
+    background-image: URL("http://freshwallpapers.net/download/8456/1366x768/download/airplane-plane.png");
+}
+
+table, th{
+    border: 3px solid #0D47A1;
+
+}
+th,td{
+    font-size: 20px;
+    padding: 15px;
+
+}
+.intro{
+    font-weight: bold;
+    font-size: 50px;
+    color: #00FC3F;
+
+
+}
+.table{
+    margin-top: 2%;
+    background-color:#2196F3;
+}
+.buttonconfirm{
+    margin-top:2%;
+    margin-left:5%;
+}
+.button {
+    padding: 10px 50px;
+    background-color: #0A0000;
+    border: none;
+    color: white;
+    size: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 510px;
+}

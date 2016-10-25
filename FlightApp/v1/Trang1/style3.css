@@ -1,0 +1,80 @@
+
+.body
+{
+	width: 100%;
+	height:auto;
+	background-color:#66cdaa;
+}
+.intro
+{
+    margin-top:1%;
+    font-size: 50px;
+    color: #3D2117;
+}
+.hoten{
+    margin-top:2%;
+    color: #3D2117;
+}
+.textboxnoidung{
+    width: 50%;
+    margin-left:4%;
+    margin-top:3%
+}
+.hovaten{
+    width: 80.6%;
+    margin-left: 1.3%;
+}
+.textboxngaythang{
+    margin-left:4%;
+    margin-top:3%;
+
+}
+.label1{
+    font-weight: bold;
+    display:inline;
+}
+.ngaysinh{
+    width:13.85%;
+    margin-left: 0.3%;
+}
+.thangsinh{
+    width:13.85%;
+}
+.namsinh{
+    width:13.85%;
+}
+.quequan{
+    margin-left: 1%;
+    width: 80.6%;
+}
+.hochieu{
+    margin-left:1.7%;
+    width: 80.6%;
+}
+.didong{
+    margin-left:2.5%;
+    width: 80.6%;
+}
+.email{
+    margin-left:5%;
+    width: 80.6%;
+}
+.ButtonFlight{
+    margin-top:2%;
+}
+.button {
+    padding: 10px 110px;
+    background-color: #3D2117;
+    border: none;
+    color: white;
+    size: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 490px;
+}

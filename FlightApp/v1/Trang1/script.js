@@ -3,12 +3,12 @@
  */
 $(function(){
     $('.inputdatefrom').datepicker({
-        format: 'mm-dd-yyyy'
+        format: 'yyyy-dd-mm'
     });
 });
 $(function(){
     $('.inputdateto').datepicker({
-        format: 'mm-dd-yyyy'
+        format: 'yyyy-dd-mm'
     });
 });
 
@@ -92,28 +92,49 @@ function check2()
     }
 
 }
+
  $(document).ready(function() {
             
             //after button is clicked we download the data
-            $(".inputfrom").on('click', function(){
-
+            $(".inputfrom").on('focus', function(){
+                $("#listchuyenbay").html('');   
                 //start ajax request
                 $.ajax({
                     type: 'GET',
-                    url: 'http://localhost:81/FlightApp/v1/allflights',
+                    url: 'http://localhost/FlightApp/v1/allflights',
                     
                     dataType: 'json',
                    
                     success: function(data) {
-                        alert(data.assignments[1].NoiDi);
-                        $("data.assignments").each(function(key,val){
-                            $(this).append()
-                        })
+                        $.each(data.assignments, function(i){
+                        $("#listchuyenbay").append("<option value=" + data.assignments[i].NoiDi + ">"+data.assignments[i].TenNoiDi+"<\/option>");
+                        });
                         
                     },
                     error: function(data)
                     {   
-                        alert("abc");
+                        alert("Haven't Flight!!!");
+                    }
+                });
+            });
+             $(".inputto").on('focus', function(){
+                 $("#listchuyenbayden").html('');  
+                //start ajax request
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost/FlightApp/v1/allflights/' + $("#SBF").val(),
+                    
+                    dataType: 'json',
+                   
+                    success: function(data) {
+                        $.each(data.assignments, function(i){
+                             $("#listchuyenbayden").append("<option value=" + data.assignments[i].NoiDen + ">" + data.assignments[i].TenNoiDen +"<\/option>");
+                        });
+                        
+                    },
+                    error: function(data)
+                    {   
+                        alert("From???");
                     }
                 });
             });

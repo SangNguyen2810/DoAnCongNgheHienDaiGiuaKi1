@@ -29,12 +29,46 @@ $app->get('/allflights', function() use ($app){
     while($row = $result->fetch_assoc()){
         $temp = array();
         $temp['NoiDi']=$row['NoiDi'];
-    
+         $temp['TenNoiDi']=$row['TenNoiDi'];
         array_push($response['assignments'],$temp);
     }
     echoResponse(200,$response);
 });
 
+$app->get('/allflights/:id', function($id) use ($app){
+    $db = new DbOperation();
+    $result = $db->getFlightsSBF($id);
+    $response = array();
+    $response['error'] = false;
+    $response['assignments'] = array();
+    while($row = $result->fetch_assoc()){
+        $temp = array();
+        $temp['NoiDen']=$row['NoiDen'];
+        $temp['TenNoiDen']=$row['TenNoiDen'];
+        array_push($response['assignments'],$temp);
+    }
+    echoResponse(200,$response);
+});
+
+$app->get('/allflights/:id/:id1/:id2', function($id,$id1,$id2) use ($app){
+    $db = new DbOperation();
+    $result = $db->showFlights($id,$id1,$id2);
+    $response = array();
+    $response['error'] = false;
+    $response['assignments'] = array();
+    while($row = $result->fetch_assoc()){
+        $temp = array();
+         $temp['Ma']=$row['Ma'];
+        $temp['TenNoiDi']=$row['TenNoiDi'];
+        $temp['TenNoiDen']=$row['TenNoiDen'];
+           $temp['Ngay']=$row['Ngay'];
+        $temp['Gio']=$row['Gio'];
+          $temp['Hang']=$row['Hang'];
+        $temp['GiaBan']=$row['GiaBan'];
+        array_push($response['assignments'],$temp);
+    }
+    echoResponse(200,$response);
+});
 
 
 function echoResponse($status_code, $response)

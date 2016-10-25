@@ -1,0 +1,125 @@
+
+.body
+{
+	width: 100%;
+	height:auto;
+	background-image: url("venice.jpg");
+    /*opacity: 0.4;*/
+}
+.intro
+{
+    margin-top:1%;
+    font-size: 50px;
+    color: #DCDFE1;
+}
+.nhapthongtin{
+    margin-top: 2%;
+    width: 60%;
+    float: left;
+}
+.nhapmachuyenbay{
+    margin-left: 2%;
+}
+.inputma{
+    padding: 1%;
+    width: 60%;
+    margin-left: 17%;
+}
+.labelten{
+    font-size: 18px;
+    color: #14C8B9;
+}
+.nhapnoidi{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputnoidi{
+    padding: 1%;
+    width: 60%;
+    margin-left: 13.8%;
+}
+.inputnoiden{
+    padding: 1%;
+    width: 60%;
+    margin-left: 11.8%;
+}
+.nhapnoiden{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputngay{
+    padding: 1%;
+    width: 60%;
+    margin-left: 14.6%;
+}
+.nhapngay{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputgio{
+    padding: 1%;
+    width: 60%;
+    margin-left: 16.15%;
+}
+.nhapgio{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.nhaphang{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputhang{
+    padding: 1%;
+    width: 60%;
+    margin-left: 14.5%;
+}
+.nhapmucgia{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputmucgia{
+    padding: 1%;
+    width: 60%;
+    margin-left: 11.5%;
+}
+.nhapsoluongghe{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputsoluongghe{
+    padding: 1%;
+    width: 60%;
+    margin-left: 5.35%;
+}
+.nhapgiaban{
+    margin-top: 3.2%;
+    margin-left: 2%;
+}
+.inputgiaban{
+    padding: 1%;
+    width: 60%;
+    margin-left: 7.5%;
+}
+.ButtonFlight{
+    margin-top:15%;
+    float:left;
+    width: 40%;
+}
+
+.button {
+    padding: 10px 110px;
+    background-color: #3D2117;
+    border: none;
+    color: white;
+    size: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+
+}

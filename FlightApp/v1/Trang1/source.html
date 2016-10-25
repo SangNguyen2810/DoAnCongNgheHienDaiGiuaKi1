@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Airport</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,9 +48,8 @@
 
                     <div class="from" >
                         <label class="labeltextbox">From</label>
-                        <input type="text" class="inputfrom" placeholder="Enter city or airport" list="listchuyenbay">       
-                        <datalist id="listchuyenbay">
-                            <option>                
+                        <input id="SBF" type="text" class="inputfrom" placeholder="Enter city or airport" list="listchuyenbay">       
+                        <datalist id="listchuyenbay"> </datalist>               
                     </div>
                     
 
@@ -63,13 +62,10 @@
                     <div class="to" >
 
                         <label class="labeltextbox1">To</label>
-                        <input type="text" class="inputto" placeholder="Enter city or airport">
+                        <input id="SBT" type="text" class="inputto" placeholder="Enter city or airport" list="listchuyenbayden">
+                        <datalist id="listchuyenbayden"> </datalist>      
 
                     </div>
-                    <div class="listData" id="sanbayden">
-                   
-                   </div>
-
                 </div>
 
 
@@ -79,9 +75,9 @@
             <div class="Detail"><!--Phan bao gom (ngay di va ngay den)-->
                 <div class="Date">
                     <div class="DateFrom">
-                        <label class="labeltextbox2">From</label>
+                        <label class="labeltextbox2">Time</label>
 
-                        <input type="text" class="inputdatefrom" placeholder="Enter Date">
+                        <input id="ngaydi" type="text" class="inputdatefrom" placeholder="Enter Date">
                         <script>
                             $(document).ready(function(){
                                 var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -99,8 +95,8 @@
                     </div>
                     <div class="DateTo">
 
-                        <label class="labeltextbox3">To</label>
-                        <input type="text" class="inputdateto" placeholder="Enter Date" id="inputdatetodisable">
+                        <label class="labeltextbox3">Again</label>
+                        <input id="ngayden" type="text" class="inputdateto" placeholder="Enter Date" id="inputdatetodisable">
                         <script>
                             $(document).ready(function(){
                                 var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -135,16 +131,16 @@
                 </div>
                 <div class="TypeTicket1">
                     <label class="radio-inline">
-                        <input class="type"type="radio" name="optradio">Type Y
+                        <input class="type"type="radio" name="optradio1">Type Y
                     </label>
                     <label class="radio-inline">
-                        <input class="type" type="radio" name="optradio">Type C
+                        <input class="type" type="radio" name="optradio1">Type C
                     </label>
                 </div>
             </div>
         </div>
         <div class="ButtonFlight">
-            <button class="button">Search flights</button>
+            <a href="./trang2.html"><button class="button" onclick="Search()"> Search flights</button></a>
         </div>
     </div>
 </body>
